@@ -268,7 +268,7 @@ section {
       height: 100%; }
 
 .footer {
-  height: 18.75rem;
+  padding: 2.5rem 0;
   font-size: 0.75rem;
   color: #a4a4a4;
   width: 100%;
@@ -279,7 +279,6 @@ section {
   .footer__wrapper {
     padding: 0 2.5rem; }
   .footer__block {
-    padding: 2.5rem 0;
     display: flex;
     justify-content: space-between;
     gap: 5rem; }
@@ -649,7 +648,7 @@ section {
 
 @media (max-width: 64rem) {
   .header {
-    z-index: 30;
+    z-index: 40;
     position: fixed;
     width: 100%; }
   .menu__list {
