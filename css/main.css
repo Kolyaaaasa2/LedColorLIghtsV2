@@ -280,6 +280,7 @@ section {
     padding: 0 2.5rem; }
   .footer__block {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 5rem; }
   .footer__title {
