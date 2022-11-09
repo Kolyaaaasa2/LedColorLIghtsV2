@@ -99,6 +99,9 @@ body {
   padding: 0 15px;
   position: relative; }
 
+header {
+  z-index: 40; }
+
 body {
   letter-spacing: 0.0625rem;
   display: flex;
@@ -146,9 +149,6 @@ main {
 
 section {
   margin-bottom: 5rem; }
-  section:last-child {
-    margin-bottom: 0;
-    padding-bottom: 5rem; }
 
 .movie {
   width: 100vw;
