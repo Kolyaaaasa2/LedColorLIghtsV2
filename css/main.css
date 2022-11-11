@@ -200,7 +200,7 @@ section {
   line-height: 130%; }
 
 .advantages__block {
-  flex: 1 1 33%; }
+  flex: 1 1 30%; }
 
 .advantages__logo {
   margin: 0 auto;
@@ -219,7 +219,7 @@ section {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 3.75rem;
+  gap: 3.125rem;
   margin: 0 auto;
   justify-content: center; }
   .cards__title {
@@ -228,9 +228,9 @@ section {
     margin-bottom: 3.75rem; }
 
 .card {
+  flex: 1 1 30%;
   display: flex;
   flex-direction: column;
-  width: 21.875rem;
   height: 35rem;
   background-color: #fff;
   font-size: 1.5rem;
@@ -336,23 +336,16 @@ section {
     color: white; }
   .footer__link {
     margin-top: 1.25rem; }
-  .footer__contacts__phone {
-    display: flex;
-    justify-content: start;
-    gap: 0.3125rem; }
-  .footer__contacts__tel {
-    width: 5.3125rem; }
-  .footer__contacts__workTime {
-    margin-top: 0.625rem;
-    display: flex;
-    justify-content: start;
-    gap: 0.3125rem; }
-  .footer__contacts__time {
-    width: 5.3125rem; }
   .footer__copyrights {
-    margin-top: 3.75rem;
+    margin-top: 1.25rem;
     text-align: center;
     margin-bottom: 0.9375rem; }
+  .footer__socials {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-top: 1.875rem;
+    gap: 1.25rem; }
   .footer__socials__item {
     display: block;
     width: 2.8125rem;
@@ -360,37 +353,73 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0.3125rem;
-    border-radius: 10px; }
+    border-radius: 10px;
+    opacity: 0.4;
+    transition: all 0.3s ease; }
     .footer__socials__item svg {
-      display: block;
-      transition: all 0.1s ease;
-      opacity: 0.3; }
+      transition: all 0.1s ease; }
+  .footer__socials__item + .footer__socials__item {
+    margin-top: 0.3125rem; }
+  .footer__contacts {
+    margin-top: 2.875rem; }
+  .footer__location {
+    margin-bottom: 1.25rem; }
+  .footer__contacts-block {
+    display: flex; }
+  .footer__contacts-block + .footer__contacts-block {
+    margin-top: 0.625rem; }
+  .footer__contacts-elem {
+    width: 6.875rem; }
 
 .instagram:hover {
+  opacity: 0.9;
   background: #f09433;
   background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1); }
 
-.instagram:hover svg {
-  opacity: 0.9; }
+.telegram {
+  padding-left: 0.125rem; }
 
 .telegram:hover {
+  opacity: 0.9;
   background: #0088cc; }
 
-.telegram:hover svg {
-  opacity: 0.9; }
-
 .facebook:hover {
+  opacity: 0.9;
   background-color: #2b4170;
   background: -moz-linear-gradient(top, #3b5998, #2b4170);
   background: -ms-linear-gradient(top, #3b5998, #2b4170);
   background: -webkit-linear-gradient(top, #3b5998, #2b4170); }
 
-.facebook:hover svg {
+.viber:hover {
+  background: #7360f2;
   opacity: 0.9; }
+
+.tiktok:hover {
+  opacity: 0.9;
+  animation: tiktok 1.5s ease infinite; }
+
+@keyframes tiktok {
+  0% {
+    filter: drop-shadow(3px 3px 0px #0ff) drop-shadow(-3px -3px 0px #f00);
+    transform: translate(1px, 1px); }
+  20% {
+    filter: drop-shadow(-3px 3px 0px #0ff) drop-shadow(3px -3px 0px #f00);
+    transform: translate(-2px, 1px); }
+  40% {
+    filter: drop-shadow(3px -3px 0px #0ff) drop-shadow(3px -3px 0px #f00);
+    transform: translate(1px, -1px); }
+  60% {
+    filter: drop-shadow(-3px -3px 0px #0ff) drop-shadow(3px 3px 0px #f00);
+    transform: translate(-1px, -1px); }
+  80% {
+    filter: drop-shadow(-2px 3px 0px #0ff) drop-shadow(-3px 2px 0px #f00);
+    transform: translate(2px, 0px); }
+  100% {
+    filter: drop-shadow(-3px 1px 0px #0ff) drop-shadow(1px -3px 0px #f00);
+    transform: translate(1px, 1px); } }
 
 /*!*******************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/scss/header.scss ***!
