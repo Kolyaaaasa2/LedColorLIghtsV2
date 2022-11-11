@@ -170,17 +170,20 @@ section {
   height: 100%;
   background: #1a191988;
   padding-left: 1.5625rem; }
+  @media (max-width: 35rem) {
+    .info {
+      padding-left: 0rem; } }
   .info__title {
     margin-top: 30vh;
     letter-spacing: .6px;
     line-height: 2.5rem;
     margin-bottom: 1.875rem;
-    font-size: 3.125rem; }
+    font-size: calc(20px + 35 * (100vw / 1470)); }
   .info__descr {
     letter-spacing: .6px;
-    line-height: 1.5rem;
     max-width: 41.25rem;
-    margin-bottom: 1.5625rem; }
+    margin-bottom: 1.5625rem;
+    font-size: calc(10px + 10 * (100vw / 1470)); }
   .info__button {
     background: black;
     padding: 0.9375rem;
@@ -207,6 +210,10 @@ section {
   width: 5.625rem;
   height: 5.625rem;
   margin-bottom: 1.25rem; }
+  @media (max-width: 35rem) {
+    .advantages__logo {
+      width: 2.5rem;
+      height: 2.5rem; } }
   .advantages__logo img {
     object-fit: cover;
     width: 100%;
@@ -240,12 +247,14 @@ section {
   text-align: center; }
   .card__title {
     margin-top: 0.9375rem;
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   .card:hover:nth-child(2) {
     transform: scale(1.05);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7); }
   .card:hover:nth-child(1) .card__photo {
     transform: scale(1.1); }
+  .card__price {
+    font-size: 1.25rem; }
   .card__button {
     margin: 0.9375rem auto 0 auto;
     padding: 0.3125rem 0.625rem;
@@ -329,13 +338,13 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 5rem; }
+    gap: 1.5625rem; }
   .footer__title {
     font-size: 1rem;
     margin-bottom: 1.875rem;
     color: white; }
   .footer__link {
-    margin-top: 1.25rem; }
+    margin-top: 0.625rem; }
   .footer__copyrights {
     margin-top: 1.25rem;
     text-align: center;
@@ -346,6 +355,9 @@ section {
     justify-content: center;
     margin-top: 1.875rem;
     gap: 1.25rem; }
+    @media (max-width: 39rem) {
+      .footer__socials {
+        gap: 0rem; } }
   .footer__socials__item {
     display: block;
     width: 2.8125rem;
@@ -360,10 +372,11 @@ section {
       transition: all 0.1s ease; }
   .footer__socials__item + .footer__socials__item {
     margin-top: 0.3125rem; }
-  .footer__contacts {
-    margin-top: 2.875rem; }
+  @media (max-width: 39rem) {
+    .footer__contacts {
+      margin-top: 0rem; } }
   .footer__location {
-    margin-bottom: 1.25rem; }
+    margin-bottom: 0.625rem; }
   .footer__contacts-block {
     display: flex; }
   .footer__contacts-block + .footer__contacts-block {
