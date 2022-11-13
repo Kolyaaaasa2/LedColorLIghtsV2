@@ -195,16 +195,18 @@ section {
       background: transparent; }
 
 .advantages {
-  margin-top: -1.875rem; }
+  margin-top: -1.875rem;
+  font-size: 1rem;
+  line-height: 130%; }
   .advantages__wrapper {
     width: 46.25rem;
-    height: 10.625rem;
+    height: 6.875rem;
     margin: 0 auto;
     position: relative;
     overflow: hidden; }
     @media (max-width: 50rem) {
       .advantages__wrapper {
-        width: 80vw;
+        width: 90vw;
         font-size: 0.875rem; } }
   .advantages__inner {
     padding-top: 0.625rem;
@@ -220,7 +222,7 @@ section {
     padding: 0.625rem 1.25rem; }
     @media (max-width: 50rem) {
       .advantages__block {
-        width: 80vw; } }
+        width: 90vw; } }
   .advantages__logo {
     margin: 0 auto;
     width: 5.625rem;
@@ -234,12 +236,21 @@ section {
       object-fit: cover;
       width: 100%;
       height: 100%; }
-  .advantages__title {
-    font-size: 1.125rem;
-    margin-bottom: 0.9375rem; }
-  .advantages__item {
-    font-size: 1.125rem;
-    line-height: 130%; }
+  .advantages__dotsList {
+    display: flex;
+    gap: 0.3125rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+  .advantages__dot {
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 50%;
+    background: #d1d0ce;
+    transition: all 0.7s ease; }
+    .advantages__dot._active {
+      background: #453f3f; }
 
 .cards {
   display: flex;
@@ -349,6 +360,7 @@ section {
   bottom: 0;
   left: 0;
   z-index: 20;
+  line-height: 0.9375rem;
   background: #1a1919; }
   .footer__wrapper {
     padding: 0 2.5rem; }
@@ -384,10 +396,7 @@ section {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    opacity: 0.4;
-    transition: all 0.3s ease; }
-    .footer__socials__item svg {
-      transition: all 0.1s ease; }
+    opacity: 0.4; }
   .footer__socials__item + .footer__socials__item {
     margin-top: 0.3125rem; }
   @media (max-width: 39rem) {
