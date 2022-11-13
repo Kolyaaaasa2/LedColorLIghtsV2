@@ -112,7 +112,8 @@ body {
 main {
   z-index: 30;
   background: #f6f4f2;
-  flex: 1 1 auto; }
+  flex: 1 1 auto;
+  line-height: 130%; }
 
 /*!*****************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/scss/main.scss ***!
@@ -177,13 +178,15 @@ section {
     margin-top: 30vh;
     letter-spacing: .6px;
     line-height: 2.5rem;
-    margin-bottom: 1.875rem;
-    font-size: calc(20px + 35 * (100vw / 1470)); }
+    margin-bottom: 2.1875rem;
+    font-size: calc(20px + 35 * (100vw / 1470));
+    margin-bottom: 1.875rem; }
   .info__descr {
     letter-spacing: .6px;
     max-width: 41.25rem;
     margin-bottom: 1.5625rem;
-    font-size: calc(10px + 10 * (100vw / 1470)); }
+    line-height: 1.5rem;
+    font-size: calc(10px + 4 * (100vw / 1470)); }
   .info__button {
     background: black;
     padding: 0.9375rem;
@@ -195,12 +198,12 @@ section {
       background: transparent; }
 
 .advantages {
-  margin-top: -1.875rem;
+  margin-top: -5rem;
   font-size: 1rem;
   line-height: 130%; }
   .advantages__wrapper {
     width: 46.25rem;
-    height: 6.875rem;
+    height: 8.125rem;
     margin: 0 auto;
     position: relative;
     overflow: hidden; }
@@ -241,19 +244,11 @@ section {
     @media (max-width: 50rem) {
       .advantages__block {
         width: 90vw; } }
-  .advantages__logo {
-    margin: 0 auto;
-    width: 5.625rem;
-    height: 5.625rem;
-    margin-bottom: 1.25rem; }
-    @media (max-width: 35rem) {
-      .advantages__logo {
-        width: 2.5rem;
-        height: 2.5rem; } }
-    .advantages__logo img {
-      object-fit: cover;
-      width: 100%;
-      height: 100%; }
+  .advantages__notification {
+    color: #9a7b69;
+    text-transform: uppercase;
+    font-size: 0.6875rem;
+    margin-bottom: 1.125rem; }
   .advantages__dotsList {
     display: flex;
     gap: 0.3125rem;
