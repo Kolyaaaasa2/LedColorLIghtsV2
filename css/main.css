@@ -402,7 +402,7 @@ section {
     align-items: end;
     justify-content: center;
     margin-top: 1.875rem;
-    gap: 1.25rem; }
+    gap: 2.5rem; }
     @media (max-width: 39rem) {
       .footer__socials {
         gap: 0rem; } }
@@ -423,7 +423,7 @@ section {
 .social__list {
   font-size: 1.875rem;
   display: flex;
-  gap: 0.9375rem;
+  gap: 1.5625rem;
   letter-spacing: 0; }
   .social__list li a {
     display: flex;
@@ -466,6 +466,7 @@ section {
 .instagram:hover {
   color: #f09433; }
   .instagram:hover::after {
+    box-shadow: 0 0 20px #e6683c;
     background: #f09433;
     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
