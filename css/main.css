@@ -425,6 +425,9 @@ section {
   display: flex;
   gap: 1.5625rem;
   letter-spacing: 0; }
+  @media (max-width: 31.25rem) {
+    .social__list {
+      gap: 0.3125rem; } }
   .social__list li a {
     display: flex;
     position: relative;
@@ -637,11 +640,12 @@ section {
     display: flex;
     gap: 2.5rem; }
     .menu__list__item__link {
-      position: relative; }
+      position: relative;
+      transition: all 0.5s ease; }
       .menu__list__item__link._active::after {
         width: 100%; }
       .menu__list__item__link._active {
-        color: white; }
+        color: #3f51fb; }
       .menu__list__item__link::after {
         content: '';
         position: absolute;
@@ -649,12 +653,14 @@ section {
         left: 0;
         width: 0%;
         height: 0.0625rem;
-        background-color: white;
-        transition: all 0.3s ease; }
+        background-color: #3f51fb;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 1.25rem #3f51fb; }
       .menu__list__item__link:hover::after {
         width: 100%; }
       .menu__list__item__link:hover {
-        color: white; }
+        color: #3f51fb;
+        text-shadow: 0 0 0.625rem #3f51fb; }
 
 .menu__block {
   position: absolute;
