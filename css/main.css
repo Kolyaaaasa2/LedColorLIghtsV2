@@ -658,8 +658,7 @@ section {
       .menu__list__item__link:hover::after {
         width: 100%; }
       .menu__list__item__link:hover {
-        color: #3f51fb;
-        text-shadow: 0 0 0.625rem #3f51fb; }
+        color: #3f51fb; }
 
 .menu__block {
   position: absolute;
