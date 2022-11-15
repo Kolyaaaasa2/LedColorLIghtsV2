@@ -275,6 +275,7 @@ section {
   .cards__title {
     font-size: 1.875rem;
     text-align: center;
+    line-height: 2.1875rem;
     margin-bottom: 3.75rem; }
 
 .card {
@@ -1005,11 +1006,8 @@ section {
     padding: 0.875rem 1.25rem; }
   .description__delivery {
     font-size: 0.75rem;
-    margin-top: 3.125rem;
-    position: relative; }
+    margin-top: 3.125rem; }
     .description__delivery span {
-      display: block;
-      position: absolute;
       color: #9a7b69 !important;
       font-size: 1rem;
       top: 0.09375rem;
@@ -1091,7 +1089,7 @@ section {
         flex: 0 0 100%; } }
   .howToUse__instruction {
     margin: 0 auto;
-    width: 28.125rem;
+    max-width: 28.125rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
