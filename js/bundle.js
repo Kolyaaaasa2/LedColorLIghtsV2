@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/scss/aboutUs.scss":
+/*!*******************************!*\
+  !*** ./src/scss/aboutUs.scss ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://start-template/./src/scss/aboutUs.scss?");
+
+/***/ }),
+
 /***/ "./src/scss/catalogue.scss":
 /*!*********************************!*\
   !*** ./src/scss/catalogue.scss ***!
@@ -47,6 +57,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://start-template/./src/scss/header.scss?");
+
+/***/ }),
+
+/***/ "./src/scss/information.scss":
+/*!***********************************!*\
+  !*** ./src/scss/information.scss ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://start-template/./src/scss/information.scss?");
+
+/***/ }),
+
+/***/ "./src/scss/inspiration.scss":
+/*!***********************************!*\
+  !*** ./src/scss/inspiration.scss ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://start-template/./src/scss/inspiration.scss?");
 
 /***/ }),
 
@@ -136,7 +166,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_reset_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/reset.scss */ \"./src/scss/reset.scss\");\n/* harmony import */ var _scss_variables_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/variables.scss */ \"./src/scss/variables.scss\");\n/* harmony import */ var _scss_fonts_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/fonts.scss */ \"./src/scss/fonts.scss\");\n/* harmony import */ var _scss_mixins_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../scss/mixins.scss */ \"./src/scss/mixins.scss\");\n/* harmony import */ var _scss_global_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../scss/global.scss */ \"./src/scss/global.scss\");\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../scss/main.scss */ \"./src/scss/main.scss\");\n/* harmony import */ var _scss_header_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../scss/header.scss */ \"./src/scss/header.scss\");\n/* harmony import */ var _scss_productCard_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../scss/productCard.scss */ \"./src/scss/productCard.scss\");\n/* harmony import */ var _scss_catalogue_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../scss/catalogue.scss */ \"./src/scss/catalogue.scss\");\n/* harmony import */ var _Menu__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Menu */ \"./src/js/Menu.js\");\n/* harmony import */ var _BurgerButton__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./BurgerButton */ \"./src/js/BurgerButton.js\");\n/* harmony import */ var _Slider__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./Slider */ \"./src/js/Slider.js\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nwindow.addEventListener('DOMContentLoaded', () => {\n    \n\n   (0,_Menu__WEBPACK_IMPORTED_MODULE_9__[\"default\"])()\n   ;(0,_BurgerButton__WEBPACK_IMPORTED_MODULE_10__[\"default\"])()\n   ;(0,_Slider__WEBPACK_IMPORTED_MODULE_11__[\"default\"])()\n\n})\n\n\n\n//# sourceURL=webpack://start-template/./src/js/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_reset_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/reset.scss */ \"./src/scss/reset.scss\");\n/* harmony import */ var _scss_variables_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/variables.scss */ \"./src/scss/variables.scss\");\n/* harmony import */ var _scss_fonts_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/fonts.scss */ \"./src/scss/fonts.scss\");\n/* harmony import */ var _scss_mixins_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../scss/mixins.scss */ \"./src/scss/mixins.scss\");\n/* harmony import */ var _scss_global_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../scss/global.scss */ \"./src/scss/global.scss\");\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../scss/main.scss */ \"./src/scss/main.scss\");\n/* harmony import */ var _scss_header_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../scss/header.scss */ \"./src/scss/header.scss\");\n/* harmony import */ var _scss_productCard_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../scss/productCard.scss */ \"./src/scss/productCard.scss\");\n/* harmony import */ var _scss_catalogue_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../scss/catalogue.scss */ \"./src/scss/catalogue.scss\");\n/* harmony import */ var _scss_information_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../scss/information.scss */ \"./src/scss/information.scss\");\n/* harmony import */ var _scss_aboutUs_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../scss/aboutUs.scss */ \"./src/scss/aboutUs.scss\");\n/* harmony import */ var _scss_inspiration_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../scss/inspiration.scss */ \"./src/scss/inspiration.scss\");\n/* harmony import */ var _Menu__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./Menu */ \"./src/js/Menu.js\");\n/* harmony import */ var _BurgerButton__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./BurgerButton */ \"./src/js/BurgerButton.js\");\n/* harmony import */ var _Slider__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./Slider */ \"./src/js/Slider.js\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nwindow.addEventListener('DOMContentLoaded', () => {\n    \n\n   (0,_Menu__WEBPACK_IMPORTED_MODULE_12__[\"default\"])()\n   ;(0,_BurgerButton__WEBPACK_IMPORTED_MODULE_13__[\"default\"])()\n   ;(0,_Slider__WEBPACK_IMPORTED_MODULE_14__[\"default\"])()\n\n})\n\n\n\n//# sourceURL=webpack://start-template/./src/js/script.js?");
 
 /***/ })
 

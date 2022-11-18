@@ -6,6 +6,10 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/scss/global.scss ***!
   \*******************************************************************************************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap);
+/*!********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/scss/aboutUs.scss ***!
+  \********************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap);
 /*!******************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/scss/reset.scss ***!
   \******************************************************************************************************************************************/
@@ -107,7 +111,8 @@ body {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  background: #1a1919; }
+  background: #1a1919;
+  color: #1a1919; }
 
 main {
   z-index: 30;
@@ -312,7 +317,7 @@ section {
     background: transparent;
     transition: all 0.3s ease; }
     .card__button:hover {
-      border: 1px solid white; }
+      border: 1px solid #1a1919; }
 
 .card__descr {
   margin-top: 0.9375rem;
@@ -1248,4 +1253,250 @@ section {
     line-height: 2rem;
     margin: 0 0.5rem 0.625rem 0rem;
     border-radius: 1rem; }
+  .filter__link {
+    position: relative; }
+    .filter__link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      height: 0.0625rem;
+      width: 0%;
+      background: #9e9179;
+      transition: all 0.3s ease; }
+    .filter__link:hover::after {
+      width: 100%; }
+
+/*!************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/scss/information.scss ***!
+  \************************************************************************************************************************************************/
+@keyframes MenuItemsReveal {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+    visibility: hidden; }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible; } }
+
+@keyframes reverseMenuItemsReveal {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+    visibility: hidden; }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible; } }
+
+@keyframes menuItemsVanish {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible; }
+  100% {
+    transform: translateX(-30px);
+    opacity: 0;
+    visibility: hidden; } }
+
+.information {
+  text-align: center;
+  color: #453f3f; }
+  .information__title {
+    margin: 3.75rem auto 1.875rem;
+    font-size: 2.5rem;
+    line-height: 48px;
+    letter-spacing: .8px;
+    max-width: 26.875rem; }
+  .information__descr {
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: .4px;
+    max-width: 650px;
+    margin: 0 auto 4.375rem; }
+  .information__inner {
+    display: flex;
+    gap: 1.875rem;
+    flex-wrap: wrap;
+    margin-bottom: 6.25rem; }
+  .information__block {
+    padding: 2.5rem;
+    color: white;
+    background: #242222;
+    flex: 1 1 30%;
+    min-height: 18.75rem;
+    box-shadow: 0 0 0.625rem black; }
+    .information__block-title {
+      font-size: 1.75rem;
+      margin-bottom: 2.5rem; }
+    .information__block-text {
+      font-size: 0.875rem;
+      line-height: 2rem; }
+  .information__notification {
+    margin-top: 1.5625rem;
+    font-size: 0.75rem;
+    margin-bottom: 2.5rem; }
+  .information__border {
+    border-bottom: 0.0625rem solid #453f3f;
+    max-width: 25rem;
+    margin: 0 auto;
+    padding-bottom: 1.25rem; }
+
+/*!************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/scss/aboutUs.scss (1) ***!
+  \************************************************************************************************************************************************/
+body {
+  font-family: Montserrat;
+  font-size: 0.875rem; }
+
+.poster {
+  position: relative;
+  margin-bottom: 1.875rem; }
+  .poster__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    text-shadow: 0 0 0.9375rem black; }
+  .poster__title {
+    font-size: 3.375rem;
+    line-height: 3.625rem;
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    letter-spacing: 8px; }
+  .poster__text {
+    line-height: 1.75rem;
+    letter-spacing: 0.0625rem;
+    font-size: 1rem; }
+
+.about__inner {
+  max-width: 43.75rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 3.75rem; }
+
+.about__title {
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  margin-bottom: 0.625rem; }
+
+.about__text {
+  color: #453f3f;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 10px; }
+
+.about__product {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 3.75rem; }
+
+.about__imageWrapper {
+  flex: 1 1 50%;
+  margin: 0 auto; }
+  .about__imageWrapper img {
+    object-fit: cover;
+    width: 70%;
+    margin: 0 auto;
+    display: block; }
+
+.about__descrWrapper {
+  flex: 1 1 50%;
+  text-align: center;
+  max-width: 43.75rem;
+  padding: 1.875rem;
+  margin: 0 auto; }
+
+.about__descrInner {
+  max-width: 28.125rem;
+  margin: 0 auto; }
+
+.about__presentation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+
+/*!************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/scss/inspiration.scss ***!
+  \************************************************************************************************************************************************/
+@keyframes MenuItemsReveal {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+    visibility: hidden; }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible; } }
+
+@keyframes reverseMenuItemsReveal {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+    visibility: hidden; }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible; } }
+
+@keyframes menuItemsVanish {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible; }
+  100% {
+    transform: translateX(-30px);
+    opacity: 0;
+    visibility: hidden; } }
+
+.inspiration__block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.inspiration__img-wrapper {
+  flex: 1 1 50%;
+  margin: 0 auto; }
+  .inspiration__img-wrapper img {
+    object-fit: cover;
+    width: 70%;
+    display: block;
+    margin: 0 auto; }
+
+.inspiration__descr-wrapper {
+  flex: 1 1 50%;
+  padding: 1.875rem; }
+
+.inspiration__descr-inner {
+  max-width: 28.125rem;
+  margin: 0 auto;
+  text-align: center; }
+
+.inspiration__title {
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  margin-bottom: 0.625rem; }
+
+.inspiration__text {
+  color: #453f3f;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 10px; }
+
+.inspiration-dark {
+  color: #a4a4a4;
+  background: #1a1919;
+  box-shadow: 0 0 0.3125rem black; }
+  .inspiration-dark__dark {
+    color: #a4a4a4; }
 
