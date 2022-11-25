@@ -278,13 +278,11 @@ const menu = () => {
 
 menu()
 
-if(document.querySelector('advantages__inner')) {
-
     const slider = () => {
         const sliderInner = document.querySelector('.advantages__inner'),
               sliderBlocks = document.querySelectorAll('.advantages__block'),
               sliderDots = document.querySelectorAll('.advantages__dot');
-    
+
     
     
         let interval = 0
@@ -322,5 +320,14 @@ if(document.querySelector('advantages__inner')) {
     
     slider()
 
-}
 
+window.addEventListener('load', () => {
+
+    const preloader = document.querySelector('.loader__wrapper')
+
+
+    preloader.classList.add('_loaded')
+    preloader.style.visibility = 'hidden'
+    document.body.style.overflow = 'visible'
+    
+})
